@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Wanita Yang Aku Cintaii!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: url('file:///C:/Users/ASUS/Downloads/my%20kiddoooo.png') no-repeat center center/cover;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #d63384;
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            font-size: 24px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+
+<div class="container" id="page1">
+    <h1>🎉 Selamat Ulang Tahun Sayangku Cintaku! 🎂</h1>
+    <p class="message">sebelum kamu pencet, aku mau bilang maaf ya sayangg aku gabisa rayain langsung di dekat kamu, mungkin one day aku akan langsung merayakan ulang tahun kamu di samping kamuu okeyyy babeeee 💖</p>
+    <button class="button" onclick="nextPage('page2')">Pencet ini ya cantikkuu</button>
+</div>
+
+<div class="container hidden" id="page2">
+    <h1>Happy Birthday, Sayang! 💖🎉</h1>
+    <p class="message">Di hari spesial ini, aku cuma mau ngingetin betapa berartinya kamu buat aku. Kamu bukan cuma seseorang yang aku sayang, tapi juga seseorang yang bikin hari-hariku lebih berarti. Terima kasih udah selalu ada, udah bikin aku ketawa, udah jadi tempat aku cerita, dan udah jadi bagian dari hidupku.
+
+        Semoga semua impian dan harapanmu terkabul, dan aku bisa jadi bagian dari setiap langkah kamu ke depannya. Aku sayang kamu lebih dari yang bisa aku ungkapin dengan kata-kata. Selamat ulang tahun, cintaku! 💕🎂</p>
+    <button class="button" onclick="nextPage('page3')">dibaca dulu baru tekan babee</button>
+</div>
+
+<div class="container hidden" id="page3">
+    <h1>Sayang, di setiap detik yang berlalu, ada satu hal yang nggak pernah berubah, yaitu perasaan aku ke kamu. 💖</h1>
+    <p class="message">Aku nggak butuh alasan buat jatuh cinta sama kamu setiap hari, karena kamu sendiri adalah alasannya. Senyumanmu, suaramu, cara kamu ngerti aku, semuanya bikin aku yakin kalau aku nggak mau ada di tempat lain selain di sisimu.
+
+        Aku mungkin nggak selalu bisa jadi yang sempurna, tapi satu hal yang pasti, aku akan selalu jadi seseorang yang mencintai kamu tanpa ragu. Karena kamu adalah jawaban dari doa-doaku, dan aku nggak pernah ingin kehilangan kamu.
+        
+        Aku cinta kamu, lebih dari sekadar kata-kata bisa gambarkan. 💕✨</p>
+    <button class="button" onclick="nextPage('page4')">Makasih ya sayangg uda dibaca, Next Sayanggku </button>
+</div>
+
+<div class="container hidden" id="page4">
+    <h1>Sayang, tahu nggak? Dari sekian banyak orang di dunia ini, aku bersyukur banget karena Tuhan mempertemukan aku sama kamu. 💕</h1>
+    <p class="message">Kamu bukan cuma pacar buat aku, kamu adalah rumah, tempat aku pulang, tempat aku berbagi semua cerita, tawa, dan bahkan diam yang nyaman. Aku nggak bisa bayangin gimana hidupku tanpa kamu, karena kamu udah jadi bagian paling indah di dalamnya.
+
+        Setiap hari bersamamu selalu spesial, tapi hari ini lebih spesial karena ini hari kamu lahir—hari di mana seseorang yang paling aku cintai diberikan ke dunia ini. Aku janji, aku bakal selalu ada buat kamu, bakal selalu ngejaga kamu, dan bakal selalu mencintai kamu dengan seluruh hatiku.
+        
+        Selamat ulang tahun, cintaku. Terima kasih udah jadi kamu, seseorang yang aku syukuri setiap hari. 💖🎂✨"</p>
+</div>
+
+<script>
+    function nextPage(nextId) {
+        document.querySelectorAll('.container').forEach(el => el.classList.add('hidden'));
+        document.getElementById(nextId).classList.remove('hidden');
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
